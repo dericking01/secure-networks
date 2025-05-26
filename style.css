@@ -1,1 +1,61 @@
-/*Input Your Custom CSS Here*/
+#status {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+  #status.success {
+    background-color: rgb(211, 250, 153);
+    animation: status 4s ease forwards;
+  }
+  #status.error {
+    background-color: rgb(250, 129, 92);
+    color: white;
+    animation: status 4s ease forwards;
+  }
+  @keyframes status {
+    0% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    90% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    100% {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+  /* General Button Styling */
+.btn-download-profile {
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0078ff; /* Primary blue color */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Hover Effect */
+.btn-download-profile:hover {
+  background-color: #0056b3; /* Darker blue */
+  transform: translateY(-3px); /* Lift effect */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25); /* Deeper shadow on hover */
+}
+
+/* Active (Clicked) Effect */
+.btn-download-profile:active {
+  background-color: #00408a; /* Even darker blue */
+  transform: translateY(0); /* Remove lift */
+  box-shadow: none; /* Remove shadow on click */
+}
+
+  
